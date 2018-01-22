@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.example.lieberson.exemploctivityforresult.MainActivity">
+
+
+    <TextView
+        android:id="@+id/telaPrincipal"
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:text="Tela Principal"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <EditText
+        android:id="@+id/nomeTelaPrincipal"
+        android:layout_width="263dp"
+        android:layout_height="47dp"
+        android:layout_above="@+id/emailTelaPrincipal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/nome"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <EditText
+        android:id="@+id/emailTelaPrincipal"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEnviarTela1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/btnEnviarTela1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="186dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:onClick="enviarDadosTela1"
+        android:text="Enviar Tela 1"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="205dp" />
+
+    <Button
+        android:id="@+id/btnEnviarTela2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnEnviarTela1"
+        android:layout_alignBottom="@+id/btnEnviarTela1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:onClick="enviarDadosTela2"
+        android:text="Enviar Tela 2"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="205dp" />
+</RelativeLayout>

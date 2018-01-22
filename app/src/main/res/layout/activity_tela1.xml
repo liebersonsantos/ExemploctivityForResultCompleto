@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.example.lieberson.exemploctivityforresult.Tela1">
+
+    <TextView
+        android:id="@+id/tela1"
+        android:layout_width="109dp"
+        android:layout_height="33dp"
+        android:text="Tela 1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/nomeTela1"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tela1"
+        android:layout_marginTop="35dp"
+        android:text="Nome"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <TextView
+        android:id="@+id/emailTela1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nomeTela1"
+        android:layout_marginTop="22dp"
+        android:text="Email"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <Button
+        android:id="@+id/btnAceitaDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/emailTela1"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="90dp"
+        android:onClick="aceitaDados"
+        android:text="Aceitar Dados"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <Button
+        android:id="@+id/btnRejeitaDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnAceitaDados"
+        android:layout_alignBottom="@+id/btnAceitaDados"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:onClick="rejeitaDados"
+        android:text="Rejeitar Dados"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="188dp" />
+</RelativeLayout>
